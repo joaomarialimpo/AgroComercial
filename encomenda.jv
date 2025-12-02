@@ -1,0 +1,146 @@
+// Projeto de programa web de gestão de clientes para comerciais da área agrícola
+// Programa de colocar dados de encomenda e gerar um texto para copiar num email
+
+
+//Dados Empresa
+  let nomeEmpresa = ''
+  let nifEmpresa = 0
+  let moradaEmpresa = ''
+  let emailEmpresa = ''
+  let contactoEmpresa = 0
+  let localdescargaEmpresa = ''
+  let responsavelEmpresa = ''
+  let contactodescargaEmpresa = 0
+  //Mais tarde tentar criar isto de forma a que, numa primeira fase, peça por inputs, e mais tarde, que vá buscar a uma base de dados
+
+//Dados Técnico
+  let nomeTecnico = 'João Limpo'
+  let contactoTecnico
+  let emailTecnico
+  if (nomeTecnico === 'João Limpo') {
+    contactoTecnico = 912334657
+    emailTecnico = 'joao.limpo@borregoleonor.com.pt'
+  } else if (nomeTecnico === 'Beatriz Piteira') {
+    contactoTecnico = 915303001
+    emailTecnico = 'beatriz.piteira@borregoleonor.com.pt'
+  } else if (nomeTecnico === 'André Neves') {
+    contactoTecnico = 913763855
+    emailTecnico = 'andre.neves@borregoleonor.com.pt'
+  } else {
+    contactoTecnico = 911233432
+    emailTecnico = 'encomendas.alentejo@borregoleonor.com.pt'
+  }
+    //Criar maneira de caso o nome seja João Limpo, apareçam os contactos automaticamente, ou seja beatriz, apareca os contactos diretamente, etc com os outros tecnicos
+      //Criado
+      //Descobrir qual a maneira de o nome técnico ser um input
+
+//Produtos e Notas Encomenda
+  // Tentar para mais tarde que isto seja através de input
+  //Produto 1
+    let nomeProduto1 = ''
+    let quantidadeProduto1 = 0
+    let quantidadeembalagemProduto1 = 0
+    let unidademedidaProduto1 = ''
+    let precounitarioProduto1 = 0
+    let precorelativoProduto1 = precounitarioProduto1 / quantidadeembalagemProduto1
+  //Produto 2
+    let nomeProduto2 = ''
+    let quantidadeProduto2 = 0 
+    let quantidadeembalagemProduto2 = 0
+    let unidademedidaProduto2 = ''
+    let precounitarioProduto2 = 0
+    let precorelativoProduto2 = precounitarioProduto2 / quantidadeembalagemProduto2
+  //Produto 3
+    let nomeProduto3 = ''
+    let quantidadeProduto3 = 0
+    let quantidadeembalagemProduto3 = 0
+    let unidademedidaProduto3 = ''
+    let precounitarioProduto3 = 0
+    let precorelativoProduto3 = precounitarioProduto3 / quantidadeembalagemProduto3
+  //Produto 4
+    let nomeProduto4 = ''
+    let quantidadeProduto4 = 0
+    let quantidadeembalagemProduto4 = 0
+    let unidademedidaProduto4 = ''
+    let precounitarioProduto4 = 0
+    let precorelativoProduto4 = precounitarioProduto4 / quantidadeembalagemProduto4
+  //Produto 5
+    let nomeProduto5 = ''
+    let quantidadeProduto5 = 0
+    let quantidadeembalagemProduto5 = 0
+    let unidademedidaProduto5 = ''
+    let precounitarioProduto5 = 0
+    let precorelativoProduto5 = precounitarioProduto5 / quantidadeembalagemProduto5
+  //Notas encomenda
+    let notasEncomenda = ''
+//Encomenda em si para imprimir / copiar colar
+  console.log 
+  ('Gostaria de colocar a seguinte encomenda:')
+  console.log
+  ('')
+  console.log
+  ('Nome de Empresa: ' + nomeEmpresa)
+  console.log
+  ('NIF: ' + nifEmpresa)
+  console.log
+  ('Morada: ' + moradaEmpresa)
+  console.log
+  ('Email: ' + emailEmpresa)
+  console.log
+  ('Contacto: ' + contactoEmpresa)
+  console.log
+  ('')
+  console.log
+  ('Encomenda:') 
+  //Tentar fazer uma condição onde apareça apenas os produtos colocados, quando o nome é nulo ou não tem valor não colocar nada
+    //Feito um if para aparecer apenas se estiver preenchido
+   if (nomeProduto5) {
+    console.log ('' + quantidadeProduto1 + ' unidades de ' + nomeProduto1 + ' de ' + quantidadeembalagemProduto1 + '' + unidademedidaProduto1 + ' cada a ' + precounitarioProduto1 + '€ por unidade')
+    console.log ('' + quantidadeProduto2 + ' unidades de ' + nomeProduto2 + ' de ' + quantidadeembalagemProduto2 + '' + unidademedidaProduto2 + ' cada a ' + precounitarioProduto2 + '€ por unidade')
+    console.log ('' + quantidadeProduto2 + ' unidades de ' + nomeProduto2 + ' de ' + quantidadeembalagemProduto2 + '' + unidademedidaProduto3 + ' cada a ' + precounitarioProduto3 + '€ por unidade')
+    console.log ('' + quantidadeProduto2 + ' unidades de ' + nomeProduto2 + ' de ' + quantidadeembalagemProduto2 + '' + unidademedidaProduto4 + ' cada a ' + precounitarioProduto4 + '€ por unidade')
+    console.log ('' + quantidadeProduto2 + ' unidades de ' + nomeProduto2 + ' de ' + quantidadeembalagemProduto2 + '' + unidademedidaProduto5 + ' cada a ' + precounitarioProduto5 + '€ por unidade')
+  } else if (nomeProduto4) {
+    console.log ('' + quantidadeProduto1 + ' unidades de ' + nomeProduto1 + ' de ' + quantidadeembalagemProduto1 + '' + unidademedidaProduto1 + ' cada a ' + precounitarioProduto1 + '€ por unidade')
+    console.log ('' + quantidadeProduto2 + ' unidades de ' + nomeProduto2 + ' de ' + quantidadeembalagemProduto2 + '' + unidademedidaProduto2 + ' cada a ' + precounitarioProduto2 + '€ por unidade')
+    console.log ('' + quantidadeProduto2 + ' unidades de ' + nomeProduto2 + ' de ' + quantidadeembalagemProduto2 + '' + unidademedidaProduto3 + ' cada a ' + precounitarioProduto3 + '€ por unidade')
+    console.log ('' + quantidadeProduto2 + ' unidades de ' + nomeProduto2 + ' de ' + quantidadeembalagemProduto2 + '' + unidademedidaProduto4 + ' cada a ' + precounitarioProduto4 + '€ por unidade')
+  } else if (nomeProduto3) {
+    console.log ('' + quantidadeProduto1 + ' unidades de ' + nomeProduto1 + ' de ' + quantidadeembalagemProduto1 + '' + unidademedidaProduto1 + ' cada a ' + precounitarioProduto1 + '€ por unidade')
+    console.log ('' + quantidadeProduto2 + ' unidades de ' + nomeProduto2 + ' de ' + quantidadeembalagemProduto2 + '' + unidademedidaProduto2 + ' cada a ' + precounitarioProduto2 + '€ por unidade')
+    console.log ('' + quantidadeProduto2 + ' unidades de ' + nomeProduto2 + ' de ' + quantidadeembalagemProduto2 + '' + unidademedidaProduto3 + ' cada a ' + precounitarioProduto3 + '€ por unidade')
+  } else if (nomeProduto2) {
+    console.log ('' + quantidadeProduto1 + ' unidades de ' + nomeProduto1 + ' de ' + quantidadeembalagemProduto1 + '' + unidademedidaProduto1 + ' cada a ' + precounitarioProduto1 + '€ por unidade')
+    console.log ('' + quantidadeProduto2 + ' unidades de ' + nomeProduto2 + ' de ' + quantidadeembalagemProduto2 + '' + unidademedidaProduto2 + ' cada a ' + precounitarioProduto2 + '€ por unidade')
+  } else if (nomeProduto1) {
+    console.log ('' + quantidadeProduto1 + ' unidades de ' + nomeProduto1 + ' de ' + quantidadeembalagemProduto1 + '' + unidademedidaProduto1 + ' cada a ' + precounitarioProduto1 + '€ por unidade')
+  } else {
+    console.log ('Sem Produtos')
+  }
+  console.log
+  ('')
+  console.log
+  ('Local de Descarga: ' + localdescargaEmpresa)
+  console.log
+  ('Responsável Descarga: ' + responsavelEmpresa)
+  console.log
+  ('Contacto Descarga: ' + contactodescargaEmpresa)
+  console.log
+  ('')
+  if (notasEncomenda) {
+    console.log
+    ('Notas encomenda:')
+    console.log
+    ('- ' + notasEncomenda)
+    console.log
+    ('')
+  }
+  console.log
+  (nomeTecnico)
+  console.log
+  ('Borrego & Leonor Alentejo')
+  console.log
+  (contactoTecnico)
+  console.log
+  (emailTecnico)
+
